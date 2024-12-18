@@ -1,0 +1,12 @@
+<div class="face-snap-scss">
+    <h2>{{ faceSnap.title }}</h2>
+    <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+    <p>{{ faceSnap.description }}</p>
+    <p>Mis en ligne le {{ faceSnap.createdAt }}</p>
+    @if (faceSnap.location) { <p>Localisation: {{ faceSnap.location }}</p> } @else { <p>Localisation non spécifiée</p> }
+    <p>
+        <button (click)="faceSnap.onLike()">{{ faceSnap.LikeButtonText }}</button>
+        <span [ngStyle]="{ color: 'rgb(' + faceSnap.like + ',0 ,0)'}">{{ faceSnap.like }} </span>
+    </p>
+</div>
+
