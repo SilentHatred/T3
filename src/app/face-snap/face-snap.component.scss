@@ -3,20 +3,14 @@
     margin: 20px auto;
     padding: 10px 30px;
     box-shadow: lightgray 4px 4px 20px;
-
     img { width: 100%; }
-
     p {
         font-weight: 300;
         font-size: 16px;
     }
 
-    h2 {
-        margin-bottom: 10px;
-    }
-    span {
-        font-weight: 500;
-    }
+    h2 { margin-bottom: 10px; }
+    span { font-weight: 500; }
 
     button {
         background-color: transparent;
@@ -31,5 +25,12 @@
         &:active {
             transform: translate(1px, 1px);
             box-shadow: lightgray 0 0 5px; }
+    }
+}
+
+.snapped {
+    button {
+        color: rgb(255, 0, 0);
+        background-color: rgba(100, 0, 0, 0.301);
     }
 }

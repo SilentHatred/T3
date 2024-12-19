@@ -1,4 +1,4 @@
-<div class="face-snap-scss">
+<div class="face-snap-scss" [ngClass]="{ snapped : faceSnap.userLiked }">
     <h2>{{ faceSnap.title }}</h2>
     <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
     <p>{{ faceSnap.description }}</p>
